@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JAVASCRIPT HTML</title>
+</head>
+<body>
+	<p id="js">VSond</p>
+	<button type="button" onclick="document.getElementById('js').innerHTML = 'Hello JS!'">Change</button>
+	<h1 style="color: red;">PICTURE</h1>
+	<img src="../images/github.png" alt="GIT" id="image_0" width="350px" height="350px">
+	<button onclick="fn2()">Change pic</button>
+
+	<script type="text/javascript">
+		function fn(str) {
+			document.getElementById('js').innerHTML = "Hello JS!";
+		}
+		function fn2() {
+			var pic = "../images/img_girl.jpg";
+			document.getElementById('image_0').src = pic;
+		}
+	</script>
+</body>
+</html>

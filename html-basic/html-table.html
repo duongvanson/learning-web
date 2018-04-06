@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML TABLE</title>
+	<style>
+		body{
+			width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		table{
+			width: 100%;
+		}
+		table, th, td{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td{
+			padding: 10px;
+			text-align: left;
+		}
+		th{
+			background: black;
+			color: white;
+		}
+		tr:nth-child(even){
+			background: gray;
+		}
+		tr:nth-child(odd)
+		{
+			background: olive;
+		}
+		table#tab1 th{
+			background: green;
+		}
+		table#tab1 tr:nth-child(even)
+		{
+			background: lightgray;
+		}
+		table#tab1 tr:nth-child(odd)
+		{
+			background: tomato;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>HTML TABLE</caption>
+		<tr>
+			<th>Name</th>
+			<th>Phone</th>
+			<th>Email</th>
+		</tr>
+		<tr>
+			<td>Alexander</td>
+			<td>123456789</td>
+			<td>Alex@gmail.com</td>
+		</tr>
+		<tr>
+			<td>Bill</td>
+			<td>016589656</td>
+			<td>Bill@yahoo.com</td>
+		</tr>
+		<tr>
+			<td>Mark</td>
+			<td>019986658</td>
+			<td>Mark@gmail.com</td>
+		</tr>
+	</table>
+	<hr>
+	<table id="tab1">
+		<tr>
+			<th>HTML</th>
+			<td>HTML (tiếng Anh, viết tắt cho HyperText Markup Language, hay là "Ngôn ngữ Đánh dấu Siêu văn bản") là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web với các mẩu thông tin được trình bày trên World Wide Web. Cùng với CSS và JavaScript, HTML tạo ra bộ ba nền tảng kỹ thuật cho World Wide Web.</td>
+		</tr>
+		<tr>
+			<th>CSS</th>
+			<td>Trong tin học, các tập tin định kiểu theo tầng – dịch từ tiếng Anh là Cascading Style Sheets – được dùng để miêu tả cách trình bày các tài liệu viết bằng ngôn ngữ HTML và XHTML.</td>
+		</tr>
+		<tr>
+			<th>JAVASCRIPT</th>
+			<td>JavaScript, theo phiên bản hiện hành, là một ngôn ngữ lập trình kịch bản dựa trên đối tượng được phát triển từ các ý niệm nguyên mẫu</td>
+		</tr>
+	</table>
+</body>
+</html>
