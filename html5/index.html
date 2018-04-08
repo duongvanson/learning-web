@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 Layout</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			width: 100%;
+			padding: 5px;
+			margin: 5px;
+		}
+		header,footer,section,article,nav{
+			border: 1px solid grey;
+			padding: 5px;
+			margin: 5px;
+		}
+		header,footer{
+			text-align: center;
+			background: black;
+			color: white;
+		}
+		nav{
+			background-color: #5D5555;
+		}
+		nav a{
+			text-decoration: none;
+			padding-right: 10px;
+			font-size: 20px;
+			color: white;
+		}
+		nav a:hover{
+			color: red;
+		}
+		section{
+			background-color: #08A2AC;
+		}
+		article{
+			background-color: white;
+		}
+		article h1{
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<header>
+	<h1>Web Development</h1>
+	</header>
+	<nav>
+		<a href="#">Home</a>
+		<a href="#">News</a>
+		<a href="#">About</a>
+	</nav>
+	<section>
+		<h1>Giới thiệu</h1>
+		<article>
+			<h1>HTML</h1>
+			<p>HTML (tiếng Anh, viết tắt cho HyperText Markup Language, hay là "Ngôn ngữ Đánh dấu Siêu văn bản") là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web với các mẩu thông tin được trình bày trên World Wide Web. Cùng với CSS và JavaScript, HTML tạo ra bộ ba nền tảng kỹ thuật cho World Wide Web.</p>
+		</article>
+		<article>
+			<h1>CSS</h1>
+			<p>Trong tin học, các tập tin định kiểu theo tầng – dịch từ tiếng Anh là Cascading Style Sheets – được dùng để miêu tả cách trình bày các tài liệu viết bằng ngôn ngữ HTML và XHTML.</p>
+		</article>
+		<article>
+			<h1>JAVASCRIPT</h1>
+			<p>JavaScript, theo phiên bản hiện hành, là một ngôn ngữ lập trình kịch bản dựa trên đối tượng được phát triển từ các ý niệm nguyên mẫu</p>
+		</article>
+	</section>
+	<footer><h1>&copy; Duong Van Son</h1></footer>
+</body>
+</html>

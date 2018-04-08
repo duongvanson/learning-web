@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<title>FORMS HTML</title>
+	<meta name="desciption" content="FORMS HTML">
+	<meta name="author" content="Duong Van Son">
+</head>
+<body>
+	<form action="#" method="POST">
+		<fieldset>
+			<legend>Thông tin</legend>
+			Họ: <br />
+			<input type="text" name="firstName"><br />
+			Tên: <br />
+			<input type="text" name="lastName"> <br />
+			Giới tính: <br>
+			<select name="GioiTinh">
+				<option value="Nam">Nam</option>
+				<option value="Nu">Nữ</option>
+				<option value="Khac">Khác</option>
+			</select><br>
+			Bổ xung: <br>
+			<textarea name="BoXung" id="" cols="30" rows="5"></textarea><br>
+			Ngôn ngữ sử dụng: <br>
+			<input type="list" list="NgonNgu">
+			<datalist id="NgonNgu">
+				<option value="HTML">
+				<option value="CSS">
+				<option value="JavaScript">
+			</datalist><br>
+			<br><input type="submit" value="Submit">
+		</fieldset>
+	</form>
+</body>
+</html>

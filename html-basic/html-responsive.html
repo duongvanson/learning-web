@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive HTML</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Responsive HTML">
+	<meta name="author" content="Duong Van Son">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+		footer, header{
+			color: white;
+			background: #9D8F8F;
+			text-align: center;
+			padding: 1px;
+		}
+		nav{
+			float: left;
+			width: 20%;
+		}
+		nav a{
+			text-decoration: none;
+			display: block;
+			background: #564949;
+			color: white;
+			padding: 5px 10px;
+			text-align: left;
+			margin-top: 5px;
+		}
+		nav a:hover{
+			background: green;
+		}
+		section{
+			float: left;
+			width: 60%;
+			background: white;
+			padding: 0px 10px;
+		}
+		aside{
+			float: left;
+			width: 20%;
+			background: #766F6F;
+			text-align: left;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		h2#side{
+			color: blue;
+		}
+		aside p{
+			color: white;
+		}
+		h2#title{
+			color: #0BC740;
+		}
+		p#content{
+			color: gray;
+			font-size: 16px;
+		}
+		@media only screen and (max-width: 800px){
+			nav, section, aside{
+				width: 100%;
+			}
+		}
+	</style>
+	<script>
+		function fnHTML() {
+			document.getElementById("title").innerHTML = "HTML";
+			document.getElementById("content").innerHTML = "HTML (tiếng Anh, viết tắt cho HyperText Markup Language, hay là 'Ngôn ngữ Đánh dấu Siêu văn bản') là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web với các mẩu thông tin được trình bày trên World Wide Web. Cùng với CSS và JavaScript, HTML tạo ra bộ ba nền tảng kỹ thuật cho World Wide Web.";
+		}
+		function fnCSS() {
+			document.getElementById("title").innerHTML = "CSS";
+			document.getElementById("content").innerHTML = "Trong tin học, các tập tin định kiểu theo tầng – dịch từ tiếng Anh là Cascading Style Sheets – được dùng để miêu tả cách trình bày các tài liệu viết bằng ngôn ngữ HTML và XHTML.";
+		}
+		function fnJS() {
+			document.getElementById("title").innerHTML = "JAVASCRIPT";
+			document.getElementById("content").innerHTML = "JavaScript, theo phiên bản hiện hành, là một ngôn ngữ lập trình kịch bản dựa trên đối tượng được phát triển từ các ý niệm nguyên mẫu";
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h1>Responsive HTML</h1>
+	</header>
+	<div style="overflow: auto;">
+		<nav>
+			<a href="#" onclick="fnHTML()">CSS</a>
+			<a href="#" onclick="fnCSS()">HTML</a>
+			<a href="#" onclick="fnJS()">JavaScript</a>
+		</nav>
+		<section>
+			<h2 id="title">HTML</h2>
+			<p id="content">HTML (tiếng Anh, viết tắt cho HyperText Markup Language, hay là 'Ngôn ngữ Đánh dấu Siêu văn bản') là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web với các mẩu thông tin được trình bày trên World Wide Web. Cùng với CSS và JavaScript, HTML tạo ra bộ ba nền tảng kỹ thuật cho World Wide Web.</p>
+		</section>
+		<aside>
+			<h2 id="side">About</h2>
+			<p>
+				Name: Duong Van Son <br>
+				Phone: +841654891155 <br>
+				Email: duongvansonit@gmail.com <br>
+			</p>
+		</aside>
+	</div>
+	<footer>
+		<h1>By VSond</h1>
+	</footer>
+</body>
+</html>

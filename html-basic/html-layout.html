@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout HTML</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Layout html">
+	<meta name="author" content="VSond">
+	<style>
+		body{
+			width: 100%;
+			border: 1px solid black;
+		}
+		header, footer{
+			text-align: center;
+			text-shadow: 2px 4px 2px green;
+			color: white;
+			padding: 10px;
+			clear: left;
+		}
+		header{
+			background: black;
+		}
+		footer{
+			background: gray;
+		}
+		nav{
+			float: left;
+			margin: 0;
+			padding: 5px;
+		}
+		nav ul{
+			list-style-type: none;
+			padding: 0;
+		}
+		nav li{
+			margin: 10px;
+		}
+		nav li a{
+			text-decoration: none;
+		}
+		nav li a:hover{
+			color: red;
+		}
+		article{
+			border: 1px solid black;
+			overflow: hidden;
+			padding-left: 20px;
+			margin-left: 20px;
+		}
+		h2.title{
+			color: blue;
+		}
+		p.content{
+			color: grey;
+		}
+	</style>
+	<script>
+		function fnHTML() {
+			document.getElementById("title_0").innerHTML = "HTML";
+			document.getElementById("content_0").innerHTML = "HTML (tiếng Anh, viết tắt cho HyperText Markup Language, hay là 'Ngôn ngữ Đánh dấu Siêu văn bản') là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web với các mẩu thông tin được trình bày trên World Wide Web. Cùng với CSS và JavaScript, HTML tạo ra bộ ba nền tảng kỹ thuật cho World Wide Web.";
+		}
+		function fnCSS() {
+			document.getElementById("title_0").innerHTML = "CSS";
+			document.getElementById("content_0").innerHTML = "Trong tin học, các tập tin định kiểu theo tầng – dịch từ tiếng Anh là Cascading Style Sheets – được dùng để miêu tả cách trình bày các tài liệu viết bằng ngôn ngữ HTML và XHTML.";
+		}
+		function fnJS() {
+			document.getElementById("title_0").innerHTML = "JAVASCRIPT";
+			document.getElementById("content_0").innerHTML = "JavaScript, theo phiên bản hiện hành, là một ngôn ngữ lập trình kịch bản dựa trên đối tượng được phát triển từ các ý niệm nguyên mẫu";
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h1>Web Development</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="#" id="html" onclick="fnHTML()">HTML</a></li>
+			<li><a href="#" id="css" onclick="fnCSS()">CSS</a></li>
+			<li><a href="#" id="javascript" onclick="fnJS()">JAVASCRIPT</a></li>
+		</ul>
+	</nav>
+	<article>
+		<h2 class="title" id="title_0">HTML</h2>
+		<p class="content" id="content_0">HTML (tiếng Anh, viết tắt cho HyperText Markup Language, hay là "Ngôn ngữ Đánh dấu Siêu văn bản") là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web với các mẩu thông tin được trình bày trên World Wide Web. Cùng với CSS và JavaScript, HTML tạo ra bộ ba nền tảng kỹ thuật cho World Wide Web.</p>
+	</article>
+	<footer>
+		<h1>W3S</h1>
+	</footer>
+</body>
+</html>
