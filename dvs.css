@@ -1,0 +1,65 @@
+*{box-sizing: border-box;font-family: sans-serif;}
+.container{ padding: 10px;}
+.big{font-size: 25px;}
+.small{font-size: 12px;}
+.normal{font-size: 16px;}
+.right{text-align: right;}
+.left{text-align: left;}
+.center{text-align: center;}
+.bg-red{background-color: #ff0000 !important;}
+.bg-green{background-color: #008000 !important;}
+.bg-darkgreen{background-color: #006400;}
+.bg-blue{background-color: #0000ff;}
+.bg-yellow{background-color: #ffff00;}
+.bg-white{background-color: #ffffff;}
+.bg-black{background-color: #000000;}
+.bg-gray{background-color: #808080;}
+.bg-darkblue{background-color: #00008B;}
+.bg-teal{background-color: #008080;}
+.bg-dvs{background-color: #3aa140;}
+.text-red{color: #ff0000;}
+.text-white{color: #ffffff;}
+.text-black{color: #000000;}
+.text-blue{color: #0000ff;}
+.text-gray{color: #808080;}
+.text-dvs{color: #3aa140;}
+.text-yellow{color: #ffff00;}
+.opa-1{opacity: 1.0;}
+.opa-2{opacity: 0.2;}
+.opa-3{opacity: 0.3;}
+.opa-4{opacity: 0.4;}
+.opa-5{opacity: 0.5;}
+.opa-6{opacity: 0.6;}
+.opa-7{opacity: 0.7;}
+.opa-8{opacity: 0.8;}
+.opa-9{opacity: 0.9;}
+.bd-dvscl{border: 1px solid #3aa140;}
+.bd-red{border: 1px solid #ff0000;}
+.bd-yellow{border: 1px solid #ffff00;}
+.bd-black{border: 1px solid #000000;}
+.bd-gey{border: 1px solid #808080;}
+.bd-blue{border: 1px solid #0000ff;}
+.bd-green{border: 1px solid #008000;}
+.bd-left{border-left: 5px solid #3aa140;}
+.bd-right{border-right: 5px solid #3aa140;}
+.bd-top{border-top: 5px solid #3aa140;}
+.bd-bottom{border-bottom: 5px solid #3aa140;}
+.bd-rd{border-radius: 5px}
+.bd-rd-13{border-radius: 5px 0px;}
+.bd-rd-24{border-radius: 0px 5px;}
+.bd-rd-14{border-radius: 5px 0 0 5px;}
+.bd-rd-23{border-radius: 0 5px 5px 0px;}
+/*Navigation Menu*/
+.nav{width: 100%;}
+.nav ul{list-style-type: none; padding: 0;overflow: hidden;}
+.nav ul li{float: left;}
+.nav ul li a
+{
+	text-decoration: none;
+	display: inline-block;
+	padding: 12px 16px;
+	color: white;
+	text-transform: uppercase;
+}
+.nav ul li a:hover{background-color: #006400;}
+/*menu side left*/
