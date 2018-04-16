@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Website</title>
+	<meta name="viewport" content="width=width-device, initial-scale=1.0">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		.header, .footer{
+			padding: 5px;
+		}
+		.header h1,.header p, .footer h1{
+			text-align: center;
+		}
+		.footer{
+			background-color: #f1f1f1;
+		}
+		.nav ul{
+			list-style-type: none;
+			background-color: rgb(4, 137, 45);
+			overflow: hidden;
+			padding: 0;
+		}
+		.nav ul li{
+			float: left;
+		}
+		.nav ul li a{
+			padding: 16px 10px;
+			display: block;
+			text-decoration: none;
+			text-align: center;
+			color: white;
+		}
+		.nav ul li a:hover{
+			background-color: rgb(4, 84, 45);
+		}
+		.row{
+			overflow: hidden;
+		}
+		.left-col{
+			float: left;
+			width: 75%;
+			padding: 5px 10px;
+		}
+		.post, .card{
+			padding: 5px 10px;
+			margin: 10px;
+			box-shadow: 0 0 6px 0 rgb(15,15,15,0.3);
+			overflow: auto;
+			height: 100%;
+		}
+		.title,.titlec{
+			color: rgb(4, 141, 45);
+		}
+		.date-post{
+			font-weight: bold;
+		}
+		.post img{
+			float: left;
+			width: 200px;
+			height: auto;
+		}
+		.caption{
+			overflow: auto;
+			padding-left: 10px;
+		}
+		.right-col{
+			float: right;
+			width: 25%;
+			padding: 5px 10px;
+		}
+		.titlec{
+			margin: 0;
+			padding: 10px;
+			background-color: #f1f1f1;
+			display: block;
+			border-left: 5px solid green;
+
+		}
+		@media only screen and (max-width: 600px) {
+			.right-col, .left-col{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>My Website</h1>
+		<p>First site</p>
+	</div>
+	<div class="nav">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">HTML</a></li>
+			<li><a href="#">CSS</a></li>
+			<li><a href="#">JavaScript</a></li>
+			<li style="float: right;"><a href="#">Contact</a></li>
+		</ul>
+	</div>
+	<div class="row">
+		<div class="left-col">
+			<div class="post">
+				<a href="#"><h2 class="title">HTML</h2></a>
+				<p class="date-post">Aprill 11, 2018</p>
+				<img src="images/html.jpg" alt="Picture">
+				<p class="caption">HTML (tiếng Anh, viết tắt cho HyperText Markup Language, hay là "Ngôn ngữ Đánh dấu Siêu văn bản") là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web với các mẩu thông tin được trình bày trên World Wide Web. Cùng với CSS và JavaScript, HTML tạo ra bộ ba nền tảng kỹ thuật cho World Wide Web.</p>
+			</div>
+			<div class="post">
+				<a href="#"><h2 class="title">CSS</h2></a>
+				<p class="date-post">Aprill 11, 2018</p>
+				<img src="images/css.png" alt="Picture">
+				<p class="caption">Trong tin học, các tập tin định kiểu theo tầng – dịch từ tiếng Anh là Cascading Style Sheets – được dùng để miêu tả cách trình bày các tài liệu viết bằng ngôn ngữ HTML và XHTML.</p>
+			</div>
+			<div class="post">
+				<a href="#"><h2 class="title">JavaScript</h2></a>
+				<p class="date-post">Aprill 11, 2018</p>
+				<img src="images/js.png" alt="Picture">
+				<p class="caption">JavaScript, theo phiên bản hiện hành, là một ngôn ngữ lập trình kịch bản dựa trên đối tượng được phát triển từ các ý niệm nguyên mẫu</p>
+			</div>
+		</div>
+		<div class="right-col">
+			<div class="card">
+				<h2 class="titlec">About</h2>
+				<p>DO SOMETHING...</p>
+			</div>
+			<div class="card">
+				<h2 class="titlec">Best Post</h2>
+				<ol style="1">
+					<li>Do some thing...</li>
+					<li>Do some thing...</li>
+					<li>Do some thing...</li>
+				</ol>
+			</div>
+			<div class="card">
+				<h2 class="titlec">Follow Me</h2>
+				<p>Do some thing...</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<h1>&copy; VSond Soft</h1>
+	</div>
+</body>
+</html>

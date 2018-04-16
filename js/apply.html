@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Apply 01</title>
+</head>
+<body>
+		<label>A: </label>
+		<input type="number" id="soa"><br><br>
+		<label>B: </label>
+		<input type="number" id="sob"><br><br>
+		<label id="kq" style="color: white; background-color: red;">xxx</label><br><br>
+		<button id="cong" onclick="cong()">+</button>
+		<button id="tru" onclick="tru()">-</button>
+		<button id="nhan" onclick="nhan()">*</button>
+		<button id="chia" onclick="chia()">:</button>
+	<script>
+		var result = 0;
+		var a, b;
+		function getab(arguments) {
+			x = parseInt(document.getElementById('soa').value);
+			y = parseInt(document.getElementById('sob').value);
+		}
+		function cong() {
+			getab();
+			result = x + y;
+			document.getElementById('kq').innerText = result;
+		}
+		function tru(arguments) {
+			getab();
+			result = x - y;
+			document.getElementById('kq').innerText = result;
+		}
+		function nhan(arguments) {
+			getab();
+			result = x * y;
+			document.getElementById('kq').innerText = result;
+		}
+		function chia(arguments) {
+			getab();
+			result = x / y;
+			document.getElementById('kq').innerText = result;
+		}
+	</script>
+</body>
+</html>

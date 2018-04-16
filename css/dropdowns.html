@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		ul{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			background-color: rgb(12,12,12,0.3);
+			overflow: auto;
+		}
+		ul li{
+			float: left;
+		}
+		ul li a{
+			display: block;
+			text-align: center;
+			color: white;
+			text-decoration: none;
+			padding: 10px 16px;
+		}
+		ul li a:hover{
+			background-color: black;
+			color: red;
+		}
+		.cha{
+			display: inline-block;
+		}
+		.con{
+			display: none;
+			position: absolute;
+			background-color: rgb(15,15,15,0.7);
+			min-width: 160px;
+		}
+		.con a{
+			text-align: left;
+		}
+		.cha:hover .con{
+			display: inline-block;
+		}
+	</style>
+</head>		
+<body>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">News</a></li>
+		<li class="cha">
+			<a href="#">Drop 01</a>
+			<div class="con">
+				<a href="#">Item 1</a>
+				<a href="#">Item 2</a>
+				<a href="#">Item 3</a>
+				<a href="#">Item 4</a>
+			</div>
+
+		</li>
+		<li class="cha">
+			<a href="#">Drop 02</a>
+			<div class="con">
+				<a href="#">Item 1</a>
+				<a href="#">Item 2</a>
+				<a href="#">Item 3</a>
+			</div>
+		</li>
+	</ul>
+	<p>HTML - CSS - JAVASCROIPT</p>
+</body>
+</html>

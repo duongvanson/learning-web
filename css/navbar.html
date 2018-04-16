@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NAV BAR</title>
+	<meta name="viewport" content="width=width-device, initial-scale=1.0">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			padding: 0;
+			margin: 0;
+		}
+		div.navbar ul{
+			list-style-type: none;
+			background-color: #f1f1f1;
+			width: 25%;
+			padding: 0px;
+			height: 100%;
+			position: fixed;
+			overflow: auto;
+		}
+		div.navbar ul li a{
+			display: block;
+			padding: 10px 16px;
+			text-decoration: none;
+			color: black;
+			border-bottom: 1px solid green;
+			border-radius: 5px;
+		}
+		div.navbar ul li a:hover{
+			background-color: rgb(76, 175, 80);
+			color: white;
+			border-left: 2px solid blue;
+		}
+		.active{
+			color: red;
+			background-color: rgb(76, 175, 80);
+			font-weight: bold;
+		}
+		div.content{
+			margin-left: 25%;
+			padding: 5px 10px;
+		}
+		@media screen and (max-width: 900px){
+			div.navbar ul{
+				height: auto;
+				width: 100%;
+				position: relative;
+			}
+			div.navbar ul li a{
+				display: inline;
+				float: left;
+				padding-left: 15px;
+				border: none;
+			}
+			div.navbar ul li a:hover{
+				border-left: none;
+				border-bottom: 2px solid blue;
+			}
+			div.content{
+				margin-left: 0;
+			}
+		}
+		@media screen and (max-width: 400px) {
+			div.navbar ul li a{
+				display: inline-block;
+				width: 100%;
+				text-align: center;
+				float: none;
+			}
+			div.content p{
+				text-align: center;
+				font-size: 16px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<ul>
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="#">HTML</a></li>
+			<li><a href="#">CSS</a></li>
+			<li><a href="#">JavaScript</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<p>Đêm nay buồn con nhớ về ký ức <br>
+Ngày bên cha tiềm thức của tuổi thơ <br>
+Gia đình nghèo con nào dám ước mơ  <br>
+Ngoài chăm học chỉ mong nhờ cha mẹ! <br>
+
+Đậu đệ thất cha vui mừng khôn kể <br>
+Quà cho con được thay thế bằng lời <br>
+Hứa dẫn về quê nội để thăm chơi <br>
+Mong con biết cội nguồn cha đất Tổ! <br>
+
+Trên đường đi hướng về quê bến đổ <br>
+Hai ngày dài cha cực khổ vì con <br>
+Bước xuống xe bãi cát trắng lối mòn <br>
+Trời hanh nắng cha cõng con thỏ thẻ! <br>
+
+Từ lúc nào cơn ngủ trưa mát mẻ <br>
+Tỉnh giấc nồng con trẻ tựa vai cha <br>
+Say sưa nghe câu chuyện kể ông bà <br>
+Chịu cực khổ quê nhà bao cuộc chiến! <br>
+ <br>
+Cảnh đổ nát tương tàn cha kể chuyện <br>
+Chính nơi đây chôn nấm mộ Tổ Tiên <br>
+Mắt rưng rưng cha chua xót cay nghiền <br>
+Quê hương đó chỉ còn là cát bụi! <br>
+
+Tôi ôm cha với nét thơ hờn tủi <br>
+Cha xa quê với dong rủi cuộc đời <br>
+Cả xóm nghèo lâm vào cảnh chơi vơi <br>
+Xin từ biệt nơi đây tìm sinh kế! <br>
+ <br>
+Bao ký ức ùa về là như thế <br>
+Lời cha khuyên sống đạo nghĩa làm người <br>
+Biết Tổ Tiên phải trái nhớ con ơi! <br>
+Tình nhân loại sáng ngời tâm đức độ!.. <br></p>
+	</div>
+</body>
+</html>

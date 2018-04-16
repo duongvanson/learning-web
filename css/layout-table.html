@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LAYOUT TABLE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body{
+			overflow: auto;
+		}
+		table{border-collapse: collapse;}
+		table, tr, td{
+			border: 1px solid rgb(12,12,12);
+			padding: 10px;
+		}
+		td.header, td.footer{
+			text-align: center;
+			background-color: #2BE322;
+			color: white;
+			font-weight: bold;
+			font-size: 200%;
+		}
+		td.left, td.right{
+			width: 20%;
+			text-align: left;
+		}
+		td ul{
+			list-style: none;
+			padding: 0;
+		}
+		td ul li{
+			padding: 5px;
+			margin: 5px;
+			border-left: 2px solid green;
+			border-bottom: 2px dotted green;
+			border-radius: 0px 5px 0px 5px;
+		}
+		td ul li:hover{
+			border-bottom: 2px dotted red;
+		}
+		td ul li a{
+			display: block;
+			text-decoration: none;
+		}
+		td ul li a:hover{
+			color: red;
+			font-weight: bold;
+			padding-left: 5px;
+		}
+		td.right {
+			background-color: rgb(25,25,25,0.3);
+		}
+	</style>
+	<script>
+		function fnHTML() {
+			document.getElementById("content_0").innerHTML = "HTML (tiếng Anh, viết tắt cho HyperText Markup Language, hay là 'Ngôn ngữ Đánh dấu Siêu văn bản') là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web với các mẩu thông tin được trình bày trên World Wide Web. Cùng với CSS và JavaScript, HTML tạo ra bộ ba nền tảng kỹ thuật cho World Wide Web.";
+		}
+		function fnCSS() {
+			document.getElementById("content_0").innerHTML = "Trong tin học, các tập tin định kiểu theo tầng – dịch từ tiếng Anh là Cascading Style Sheets – được dùng để miêu tả cách trình bày các tài liệu viết bằng ngôn ngữ HTML và XHTML.";
+		}
+		function fnJS() {
+			document.getElementById("content_0").innerHTML = "JavaScript, theo phiên bản hiện hành, là một ngôn ngữ lập trình kịch bản dựa trên đối tượng được phát triển từ các ý niệm nguyên mẫu";
+		}
+	</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td class="header" colspan="3">Web Development</td>
+		</tr>
+		<tr>
+			<td class="left">
+				<ul>
+					<li><a href="#" onclick="fnHTML()">HTML</a></li>
+					<li><a href="#" onclick="fnCSS()">CSS</a></li>
+					<li><a href="#" onclick="fnJS()">JavaScript</a></li>
+				</ul>
+			</td>
+			<td class="content">
+				<p id="content_0">HTML (tiếng Anh, viết tắt cho HyperText Markup Language, hay là "Ngôn ngữ Đánh dấu Siêu văn bản") là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web với các mẩu thông tin được trình bày trên World Wide Web. Cùng với CSS và JavaScript, HTML tạo ra bộ ba nền tảng kỹ thuật cho World Wide Web.</p>
+			</td>
+			<td class="right">
+				<h2 style="color: green;">Thông tin</h2>
+				<p>
+					Name: Dương Văn Sơn <br>
+					ICT University, TNU <br>
+					Phone: +841654891155 <br>
+					Email: duongvansonit@gmail.com
+ 				</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="footer" colspan="3">W3S</td>
+		</tr>
+	</table>
+</body>
+</html>

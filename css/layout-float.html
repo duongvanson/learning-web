@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Website</title>
+	<meta name="viewport" content="width=width-device,initial-scale=1.0">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			padding: 0;
+			margin: 0;
+			margin: 5px;
+		}
+		#header, #footer{
+			background-color: rgb(77, 173, 111);
+			color: white;
+			padding: 5px;
+		}
+		#nav ul{
+			list-style-type: none;
+			background-color: rgb(77, 181, 42);
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		#nav ul li{
+			float: left;
+		}
+		#nav ul li a{
+			display: inline-block;
+			padding: 10px;
+			color: white;
+			font-size: 2vw;
+			text-decoration: none;
+			text-align: center;
+		}
+		#nav ul li a:hover{
+			background-color: #4d7e2a;
+		}
+		.active{
+			background-color: rgb(77, 124, 42);
+		}
+		#clearfix::after{
+			content: "";
+			clear: both;
+			display: table;
+		}
+		#menuside{
+			width: 25%;
+			float: left;
+		}
+		#menuside a{
+			margin: 0;
+			display: block;
+			color: blue;
+			font-size: 2vw;
+			padding: 10px;
+			text-decoration: none;
+			border-bottom: 2px solid green;
+			border-left: 2px solid green;
+		}
+		#menuside a:hover{
+			background-color: rgb(77, 139, 42);
+			border-left: 2px solid red;
+			padding-left: 15px;
+		}
+		#content{
+			width: 75%;
+			float: left;
+		}
+		#content p{
+			padding: 5px 10px;
+		}
+		@media only screen and (max-width:750px) {
+			#nav, #menuside, #content{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1>My Website</h1>
+	</div>
+	<div id="nav">
+		<ul>
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</div>
+	<div id="clearfix">
+		<div id="menuside">
+			<a href="#">HTML</a>
+			<a href="#">CSS</a>
+			<a href="#">JavaScript</a>
+		</div>
+		<div id="content">
+			<p>HTML (tiếng Anh, viết tắt cho HyperText Markup Language, hay là 'Ngôn ngữ Đánh dấu Siêu văn bản') là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web với các mẩu thông tin được trình bày trên World Wide Web. Cùng với CSS và JavaScript, HTML tạo ra bộ ba nền tảng kỹ thuật cho World Wide Web.</p>
+		</div>
+	</div>
+	<div id="footer">
+		<h1>&copy; Design by Duong Van Son</h1>
+	</div>
+</body>
+</html>

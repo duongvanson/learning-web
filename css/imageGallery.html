@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image Gallery</title>
+	<style>
+	*{
+		box-sizing: border-box;
+	}
+		div.picture{
+			margin: 5px;
+			border:1px solid grey;
+			float: left;
+			width: 300px;
+		}
+		div.picture:hover{
+			border:1px solid green;
+		}
+		div.picture img{
+			width: 100%;
+			height: auto;
+		}
+		div.caption{
+			text-align: center;
+			padding: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="picture">
+		<a target="_blank" href="../images/img_fjords.jpg">
+			<img src="../images/img_fjords.jpg" alt="Caption">
+		</a>
+		<div class="caption">Caption 01</div>
+	</div>
+	<div class="picture">
+		<a target="_blank" href="../images/img_girl.jpg">
+			<img src="../images/img_girl.jpg" alt="Caption">
+		</a>
+		<div class="caption">Caption 02</div>
+	</div>
+	<div class="picture">
+		<a target="_blank" href="../images/img_mountains.jpg">
+			<img src="../images/img_mountains.jpg" alt="Caption">
+		</a>
+		<div class="caption">Caption 03</div>
+	</div>
+	<div class="picture">
+		<a target="_blank" href="../images/web.jpg">
+			<img src="../images/web.jpg" alt="Caption">
+		</a>
+		<div class="caption">Caption 04</div>
+	</div>
+</body>
+</html>
